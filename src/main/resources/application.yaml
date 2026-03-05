@@ -1,0 +1,42 @@
+spring:
+  application:
+    name: school-registration
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:1111/srq_db
+    username: srq
+    password: srq@2026
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+      #config mail server
+  mail:
+    username: chaovanthoung168@gmail.com
+    password: lhsz rvra wyvn bvsu
+    host: smtp.gmail.com
+    port: 587
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+bakong:
+  api:
+    uri: https://api-bakong.nbc.gov.kh
+    check-transaction-uri: /v1/check_transaction_by_md5
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImlkIjoiMzYyYjUyZGMyZDhlNDUyYSJ9LCJpYXQiOjE3NzI1MDYyMTYsImV4cCI6MTc4MDI4MjIxNn0.T7YVsS6Jkr0uJMXSUiY-C9XZEV1KaZKEak1h3bBoN6g
+  merchant:
+    account-id: vanthoung_chao@bkrt
+    merchant-name: Thoung Smos
+    merchant-city: Phnom Penh
+    currency: USD
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+  api-docs:
+    path: /v3/api-docs
+

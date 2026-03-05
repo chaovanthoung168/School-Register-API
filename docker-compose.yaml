@@ -1,0 +1,12 @@
+services:
+  srq-db:
+    image: postgres:16.3-bullseye
+    container_name: srq-db
+    ports:
+      - "1111:5432"
+    environment:
+      POSTGRES_PASSWORD: srq@2026
+      POSTGRES_USER: srq
+      POSTGRES_DB: srq_db
+volumes:
+  todo-list-vol:
