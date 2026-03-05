@@ -27,7 +27,7 @@ bakong:
   api:
     uri: https://api-bakong.nbc.gov.kh
     check-transaction-uri: /v1/check_transaction_by_md5
-    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImlkIjoiMzYyYjUyZGMyZDhlNDUyYSJ9LCJpYXQiOjE3NzI1MDYyMTYsImV4cCI6MTc4MDI4MjIxNn0.T7YVsS6Jkr0uJMXSUiY-C9XZEV1KaZKEak1h3bBoN6g
+    token: ${BAKONG_TOKEN}
   merchant:
     account-id: vanthoung_chao@bkrt
     merchant-name: Thoung Smos
